@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <title>QR Code Reader</title>
+    <script src="plugins/plugin-loader.js"></script>
+    <script>
+      monaca.viewport({width:240});
+    </script>
+    <!-- meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" -->
+    <script src="components/loader.js"></script>
+    <script src="js/zepto.js"></script>
+    <script src="js/app.js"></script>
+    <!-- link rel="stylesheet" href="components/loader.css" -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <br>
+    <button id="ScanButton" type="button">Scan</button>
+	<br>
+    <p id="ResultMessage">ここに結果が表示されます</p>
+    <button id="BrowserOpenButton" type="button" style="display:none;">Open URL</button>
+</body>
+</html>
